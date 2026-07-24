@@ -1,13 +1,10 @@
 .venv/
-.venv-py312/
 .venv-py314/
-
+.venv-py312/
 __pycache__/
-
 .ipynb_checkpoints/
-
-.vscode/
-
 *.pyc
-
 .env
+checkpoints/
+logs/
+.vscode/
