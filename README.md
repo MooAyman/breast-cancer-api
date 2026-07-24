@@ -1,96 +1,125 @@
-🩺 Breast Cancer Detection API
+# 🩺 Breast Cancer Detection API
 
-A Deep Learning project for predicting whether a breast tumor is Benign or Malignant using the Breast Cancer Wisconsin Dataset. The project includes model training, preprocessing, evaluation, and deployment through a FastAPI REST API.
+A Deep Learning project for predicting whether a breast tumor is **Benign** or **Malignant** using the Breast Cancer Wisconsin Dataset. The project includes model training, preprocessing, evaluation, and deployment through a FastAPI REST API.
 
-📌 Project Overview
+---
+
+## 📌 Project Overview
 
 This project demonstrates an end-to-end Deep Learning workflow:
 
-Data preprocessing
-Building a Neural Network with TensorFlow/Keras
-Model evaluation
-Building a REST API using FastAPI
-📊 Dataset
+* Data preprocessing
+* Building a Neural Network with TensorFlow/Keras
+* Model evaluation
+* Building a REST API using FastAPI
 
-Dataset: Breast Cancer Wisconsin Diagnostic Dataset
+---
 
-The dataset contains 30 numerical features extracted from digitized images of breast mass cell nuclei.
+## 📊 Dataset
+
+**Dataset:** Breast Cancer Wisconsin Diagnostic Dataset
+
+The dataset contains **30 numerical features** extracted from digitized images of breast mass cell nuclei.
 
 Target classes:
 
-0 → Benign
-1 → Malignant
-🧠 Model
+* **0 → Benign**
+* **1 → Malignant**
+
+---
+
+## 🧠 Model
 
 Framework:
 
-TensorFlow / Keras
+* TensorFlow / Keras
 
 Architecture:
 
-Sequential Neural Network
-Dense Layers
-ReLU Activation
-Sigmoid Output Layer
+* Sequential Neural Network
+* Dense Layers
+* ReLU Activation
+* Sigmoid Output Layer
 
 Loss Function:
 
-Binary Crossentropy
+* Binary Crossentropy
 
 Optimizer:
 
-adam
+* adam
 
 Evaluation Metrics:
 
-Accuracy
-Precision
-Recall
-F1 Score
-Confusion Matrix
-ROC Curve
-AUC
-📈 Model Performance
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
+* ROC Curve
+* AUC
+
+---
+
+## 📈 Model Performance
 
 Final Test Accuracy:
 
-99.12%
+**99.12%**
 
 Confusion Matrix:
 
+```
 [[72  0]
  [ 1 41]]
+```
 
 Classification Report:
 
+```
 Accuracy : 99.12%
 Precision: 99%
 Recall   : 99%
 F1 Score : 99%
-🚀 Running the API
+```
+
+---
+
+## 🚀 Running the API
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 Run the API:
 
+```bash
 uvicorn app:app --reload
+```
 
 Open:
 
+```
 http://127.0.0.1:8000/docs
+```
 
 FastAPI automatically generates interactive API documentation using Swagger UI.
 
-🔍 Prediction Endpoint
+---
 
-POST
+## 🔍 Prediction Endpoint
 
+**POST**
+
+```
 /predict
+```
 
 Example Request:
 
+```json
 {
   "radius_mean": 17.99,
   "texture_mean": 10.38,
@@ -125,38 +154,51 @@ Example Request:
   "symmetry_worst": 0.4601,
   "fractal_dimension_worst": 0.1189
 }
+```
 
 Example Response:
 
+```json
 {
   "prediction": 1,
   "probability": 0.9987
 }
-🛠 Technologies Used
-Python
-TensorFlow / Keras
-NumPy
-Scikit-learn
-Joblib
-FastAPI
-Uvicorn
-Git
-GitHub
-📚 Learning Outcomes
+```
+
+---
+
+## 🛠 Technologies Used
+
+* Python
+* TensorFlow / Keras
+* NumPy
+* Scikit-learn
+* Joblib
+* FastAPI
+* Uvicorn
+* Git
+* GitHub
+
+---
+
+## 📚 Learning Outcomes
 
 Through this project, I practiced:
 
-Data preprocessing
-Feature scaling
-Neural Network development
-Model evaluation and interpretation
-Model persistence
-REST API development
-Git & GitHub workflow
-Preparing models for deployment
-👤 Author
+* Data preprocessing
+* Feature scaling
+* Neural Network development
+* Model evaluation and interpretation
+* Model persistence
+* REST API development
+* Git & GitHub workflow
+* Preparing models for deployment
 
-Mohamed Ayman
+---
+
+## 👤 Author
+
+**Mohamed Ayman**
 
 GitHub:
 https://github.com/MooAyman
